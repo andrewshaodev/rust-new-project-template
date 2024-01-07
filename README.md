@@ -1,5 +1,7 @@
 # rust-new-project-template
-A good starting point for a new Rust project
+For New Rust Projects to run in Github Codespaces
+
+Updated to latest Debian bookworm version
 
 ## References
 
