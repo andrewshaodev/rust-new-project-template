@@ -1,4 +1,6 @@
-FROM mcr.microsoft.com/devcontainers/rust:0-1-bullseye
+# [Choice] Debian OS version (use bullseye on local arm64/Apple Silicon): buster, bullseye
+ARG VARIANT="bookworm"
+FROM mcr.microsoft.com/vscode/devcontainers/rust:1-${VARIANT}
 
 # Include lld linker to improve build times either by using environment variable
 # RUSTFLAGS="-C link-arg=-fuse-ld=lld" or with Cargo's configuration file (i.e see .cargo/config.toml).
